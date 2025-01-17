@@ -1,0 +1,29 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex; /* Use flexbox to create a flexible layout */
+}
+
+.sidebar {
+    width: 200px; /* Fixed width for sidebars */
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 20px; /* Padding inside the sidebar */
+}
+
+.main-content {
+    flex: 1; /* This will take up the remaining space */
+    padding: 20px; /* Padding inside the main content area */
+    background-color: #fff; /* White background */
+}
+
+.left-sidebar {
+    border-right: 1px solid #ccc; /* Optional: border between left sidebar and main content */
+}
+
+.right-sidebar {
+    border-left: 1px solid #ccc; /* Optional: border between main content and right sidebar */
+}

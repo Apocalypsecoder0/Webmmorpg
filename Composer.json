@@ -1,0 +1,27 @@
+{
+    "name": "vendor/package",
+    "description": "A brief description of the package",
+    "type": "library",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "vendor/package-name": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Namespace\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

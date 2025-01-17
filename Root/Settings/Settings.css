@@ -1,0 +1,62 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif; /* Default font */
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 20px; /* Padding around the header */
+    text-align: center; /* Center the text */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333; /* Dark background for navigation */
+    overflow: hidden; /* Clear floats */
+}
+
+nav a {
+    float: left; /* Align links to the left */
+    display: block; /* Make links block elements */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    padding: 14px 16px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    background-color: #ddd; /* Light background on hover */
+    color: black; /* Dark text on hover */
+}
+
+/* Button Styles */
+.btn {
+    background-color: #008CBA; /* Blue background */
+    border: none; /* No border */
+    color: white; /* White text */
+    padding: 15px 32px; /* Padding for buttons */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block for buttons */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin around buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn:hover {
+    background-color: #005f73; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav a {
+        float: none; /* Stack links vertically on small screens */
+        width: 100%; /* Full width for links */
+    }
+}

@@ -1,0 +1,39 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.sidebar:hover {
+    background-color: #e0e0e0; /* Change background color on hover */
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.main-content:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+.left-sidebar {
+    border-right: 1px solid #ccc;
+}
+
+.right-sidebar {
+    border-left: 1px solid #ccc;
+}

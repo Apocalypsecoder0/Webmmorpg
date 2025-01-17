@@ -1,0 +1,34 @@
+{
+    "packages": [
+        {
+            "name": "vendor/package-name",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vendor/package-name.git",
+                "reference": "abcdef1234567890"
+            },
+            "require": {
+                "php": "^7.4 || ^8.0",
+                "another/vendor": "^2.0"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Namespace\\": "src/"
+                }
+            }
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "phpunit/phpunit",
+            "version": "9.5.0",
+            "require": {
+                "php": "^7.3 || ^8.0"
+            }
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "content-hash": "abcdef1234567890abcdef1234567890"
+}

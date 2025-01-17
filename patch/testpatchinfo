@@ -1,0 +1,5 @@
+To test patch.php, you can use a tool like Postman or cURL to send a PATCH request.
+Example cURL Command
+curl -X PATCH http://yourdomain.com/patch.php \
+-H "Content-Type: application/x-www-form-urlencoded" \
+-d "id=1&name=NewName&email=newemail@example.com"

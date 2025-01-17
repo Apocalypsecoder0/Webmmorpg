@@ -1,0 +1,32 @@
+<?php
+include 'db.php'; // Include your database connection
+
+// Fetch limited-time missions
+$currentDate = date('Y-m-d');
+$stmt = $pdo->prepare("SELECT * FROM missions WHERE start_date <= ? AND end_date >= ? AND is_active = TRUE");
+$stmt->execute([$currentDate, $currentDate]);
+$limitedMissions = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limited-Time Missions</title>
+</head>
+<body>
+    <h1>Limited-Time Missions</h1>
+
+    <ul>
+        <?php foreach ($limitedMissions as $mission) : ?>
+            <li>
+                <strong><?php echo htmlspecialchars($mission['mission_name']); ?></strong>: 
+                <?php echo htmlspecialchars($mission['description']); ?> 
+                <br>Reward: <?php echo htmlspecialchars($mission['reward']); ?> points
+                <br>Duration: <?php echo htmlspecialchars($mission['start_date']); ?> to <?php echo htmlspecialchars($mission['end_date']); ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</body>
+</html>
