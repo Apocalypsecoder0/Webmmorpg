@@ -1,10 +1,12 @@
-RTS Turn-Based MMORPG README
-Welcome to the RTS Turn-Based MMORPG project! This repository contains the foundational code and resources for developing a web-based browser game that combines real-time strategy (RTS) elements with turn-based mechanics in a massively multiplayer online role-playing game (MMORPG) setting.
+Web MMORPG Project README
+Welcome to the Web MMORPG project! This repository contains the core code and resources for developing a modern web-based MMORPG that integrates real-time and turn-based gameplay elements. The project utilizes PHP (>= 7.4), Composer, Node.js, and other contemporary web technologies.
 Table of Contents
 Introduction
 Features
 Technologies Used
 Getting Started
+Installation
+Usage
 Game Mechanics
 Contributing
 License
@@ -23,23 +25,33 @@ Database: MongoDB
 Real-Time Communication: Socket.io
 Game Engine: Phaser.js (for 2D graphics)
 Getting Started
-To get started with the development of the RTS Turn-Based MMORPG, follow these steps:
+To get started with the development of the Web MMORPG project, follow these steps:
 Prerequisites
-Node.js installed on your machine.
-MongoDB installed or access to a MongoDB cloud service.
-Basic understanding of JavaScript and web development.
+- PHP (>= 7.4) installed on your machine.
+- Composer installed.
+- Node.js installed on your machine.
+- MongoDB installed or access to a MongoDB cloud service.
+- Basic understanding of PHP, JavaScript, and web development.
 Installation
 Clone the Repository:
-git clone https://github.com/yourusername/rts-turn-based-mmorpg.git
-cd rts-turn-based-mmorpg
-Install Dependencies:
+git clone https://github.com/yourusername/web-mmorpg.git
+cd web-mmorpg
+Install PHP Dependencies:
+composer install
+Install Node.js Dependencies:
 npm install
 Set Up the Database:
 Create a MongoDB database and update the connection string in the .env file.
 Run the Application:
-npm start
+php -S localhost:8000 -t public
 Access the Game:
-Open your web browser and navigate to http://localhost:3000.
+Open your web browser and navigate to http://localhost:8000.
+Usage
+A quick guide on how to use the game:
+- Register or log in to your account.
+- Customize your profile and settings.
+- Join or create a guild.
+- Navigate through the game menus to start missions, engage in battles, or manage resources.
 Game Mechanics
 Basic Gameplay Loop
 Turn Order: Players take turns in a predefined order.
@@ -54,11 +66,10 @@ Each unit has stats (e.g., health, attack power).
 Combat is resolved using a turn-based system where players choose their actions strategically.
 Contributing
 We welcome contributions to improve the game! To contribute:
-Fork the repository.
-Create a new branch for your feature or bug fix.
-Make your changes and commit them.
-Push to your branch and create a pull request.
+- Fork the repository.
+- Create a new branch for your feature or bug fix.
+- Make your changes with clear commit messages and run tests.
+- Push to your branch and open a pull request.
+Please follow the coding guidelines and adhere to the project's style guide.
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-
